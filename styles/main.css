@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #fff5eb;
@@ -13,21 +17,95 @@ p, li, a, span, div {
     font-weight: 400;
 }
 
+p span {
+    display: block;
+}
+
 a {
     color: #6A8D92;
-    /* Dusty Blue for links */
 }
 
 a:hover {
     color: #967BB6;
-    /* Lavender for hover state on links */
+}
+
+
+header .navbar {
+    background-color: #2F4F4F !important;
+    position: sticky;
+    /* Your chosen navbar color */
+    padding: 1rem 0;
+    /* Adjusted for better vertical alignment */
+}
+
+header .navbar .nav-item {
+    margin: 0 1rem;
+    /* Horizontal spacing between menu items */
+}
+
+header .navbar .nav-link {
+    color: white !important;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+
+header .navbar .nav-link:hover {
+    color: #87CEEB !important;
+}
+
+/* Underline effect */
+header .navbar .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    /* Positioning the underline below the text */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #87CEEB !important;
+    transition: width 0.3s ease-in-out;
+}
+
+header .navbar .nav-link:hover::before {
+    width: 100%;
+}
+
+/* Sticky top positioning */
+header .navbar.sticky-top {
+    top: 0;
+    z-index: 1020;
+    width: 100%;
+}
+
+.btn-discover {
+    background-color: #000000;
+    /* Black button background */
+    color: #ffffff;
+    /* White text */
+    padding: 10px 20px;
+    /* Button padding */
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Hover effect for button */
+.btn-discover:hover {
+    background-color: #333333;
+    /* Darker background on hover */
 }
 
 
 .card {
     margin-bottom: 20px;
-    background-color: #FEFEFE; /* Off-White for card backgrounds */
-    border: 1px solid #9DBF9E; /* Sage Green for card borders */
+    background-color: #FEFEFE;
+    border: 1px solid #9DBF9E;
     margin-bottom: 20px;
 }
 
@@ -40,44 +118,35 @@ h5 {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    /* Spacing between the title and the progress bar */
 }
 
 .progress {
     height: 25px;
     background-color: #f0f0f0;
-    /* Light grey background for progress bar */
     margin-bottom: 1rem;
-    /* Spacing between each skill */
 }
 
 .progress-bar {
     line-height: 30px;
-        /* Centers the text vertically if you have text inside the progress bar */
-        font-size: 16px;
+    font-size: 16px;
 }
 
 .progress-bar-advanced {
     background-color: #6A7BA2;
-    /* Slate Blue for high proficiency */
 }
 
 .progress-bar-intermediate {
     background-color: #9DBF9E;
-    /* Sage Green for intermediate proficiency */
 }
 
 .progress-bar-beginner {
     background-color: #967BB6;
-    /* Soft Lavender for beginner proficiency */
 }
 
 
 .carousel-caption {
         color: #fff5eb;
-        /* Soft Peach for caption text, ensuring good contrast */
         background-color: rgba(47, 79, 79, 0.9);
-        /* Dark Slate Grey with opacity */
         padding: 1rem;
         border-radius: 0.5rem;
         bottom: 10%;
@@ -92,7 +161,6 @@ h5 {
     -webkit-transform: rotate(135deg);
 }
 
-/* Custom next arrow icon */
 .custom-carousel-control-next-icon {
     border: solid #2F4F4F;;
     border-width: 0 6px 6px 0;
@@ -111,57 +179,6 @@ h5 {
 .btn-secondary {
     background-color: #9DBF9E;
     border-color: #9DBF9E;
-}
-
-.navbar,
-.footer {
-    background-color: #2F4F4F !important;
-    color: #ffffff !important;
-}
-
-.navbar a,
-.footer a {
-    color: #ffffff !important;
-}
-
-.navbar a:hover,
-.footer a:hover {
-    color: #87CEEB !important;
-}
-
-.nav-link {
-    font-weight: 500;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff !important;
-    padding: 15px 0px;
-    margin: 0px 10px;
-    display: inline-block;
-    position: relative;
-    opacity: 0.75;
-}
-
-.nav-link:hover {
-    color: #87CEEB !important;
-    opacity: 1;
-}
-
-.nav-link::before {
-    transition: 300ms;
-    height: 5px;
-    content: "";
-    position: absolute;
-    background-color: #87CEEB;
-}
-
-.nav-link-ltr::before {
-    width: 0%;
-    bottom: 10px;
-}
-
-.nav-link-ltr:hover::before {
-    width: 85%;
 }
 
 .featurette {
@@ -208,26 +225,72 @@ h5 {
 
     .featurette-heading {
         font-size: 2rem;
-        /* Slightly smaller font for smaller screens */
     }
 
     .order-md-2 {
         order: -1;
-        /* Reverse the image and text order on smaller screens */
     }
 }
 
 .featurette-background-1 {
     background-color: #e9f5ff;
-    /* Light blue background for contrast */
 }
 
 .featurette-background-2 {
     background-color: #fffbea;
-    /* Light yellow background for warmth */
 }
 
 .featurette-background-3 {
     background-color: #e9ffe9;
-    /* Light green background for freshness */
+}
+
+.footer {
+    background-color: #2F4F4F !important;
+    color: #ffffff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer h5 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer p {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-icon {
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 3rem;
+}
+
+.footer-icon:hover {
+    color: #87CEEB;
+    /* Icons hover color */
+}
+
+.footer-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #87CEEB;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        text-align: left;
+    }
+
+    .footer-links {
+        text-align: center;
+        margin-top: 1rem;
+    }
 }

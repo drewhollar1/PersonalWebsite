@@ -25,7 +25,7 @@
 
 <body>
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,19 +36,20 @@
                     <li class="nav-item"><a class="nav-link nav-link-ltr" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link nav-link-ltr" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link nav-link-ltr" href="resume.html">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-ltr" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-ltr" href="#contact-footer">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
+
+
         <div class="container">
         <section>
             <div class="row mt-5">
-                <div class="col-md-5 mt-4">
+                <div class="col-md-5">
                     <h2>
-                    👋 Hello,
-                    I'm Drew Hollar.
+                    👋 Hello, I'm Drew Hollar!
                     </h2>
                     <p style="white-space: pre-line;">
                     I'm currently a student at the University of Virginia, my goal is to graduate in Fall 2024 with a B.S. in Computer Science.
@@ -65,9 +66,11 @@
         </section>
 
         <section>
-            <h2 class="text-center mt-5">Technical Expertise</h2>
-            <p class="text-center mb-5">Always looking to expand and develop my skillset</p>
-
+            <h2 class="text-center mt-5">Current Skillset</h2>
+            <p class="text-center mb-5"><span>In the constantly evolving field of software engineering,
+                I'm always looking to expand and develop my skillset.</span>
+                <span>The percentages below represent my proficiency in the corresponding skill.</span>
+            </p>
             <div class="row">
                 <!-- Left Column for Skills -->
                 <div class="col-md-6">
@@ -143,6 +146,8 @@
                     <!-- Repeat for other skills -->
                 </div>
             </div>
+
+            <a href="#contact-footer" class="btn btn-primary mt-5 mb-2">Hire Me!</a>
 
         </section>
 
@@ -253,15 +258,33 @@
         </div>
 
     </main>
-    <footer class="text-center py-4">
-        <small>© 2024 Drew Hollar</small>
-        <div>
-            <a href="about.html">About</a> |
-            <a href="projects.html">Projects</a> |
-            <a href="resume.html">Resume</a> |
-            <a href="contact.html">Contact</a>
+    
+    <footer class="footer bg-dark text-light text-center py-4" id="contact-footer">
+        <div class="container">
+            <h2 class = "mt-5 mb-2" style="color: white">Contact Me</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h5>Connect with me here 👇</h5>
+                    <a href="https://www.linkedin.com/in/andrew-hollar/" class="footer-icon"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/drewhollar1" class="footer-icon"><i class="bi bi-github"></i></a>
+                    <a href="https://www.instagram.com/dhollr_1/" class="footer-icon"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h5>Reach out formally here!</h5>
+                    <p><i class="bi bi-telephone-fill"></i> +1 540 282 2612</p>
+                    <p><i class="bi bi-envelope-fill"></i> drewhollar1@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a> |
+                <a href="projects.html">Projects</a> |
+                <a href="resume.html">Resume</a>
+            </div>
+            <small>© 2024 Drew Hollar</small>
         </div>
     </footer>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
