@@ -17,6 +17,10 @@ p, li, a, span, div {
     font-weight: 400;
 }
 
+h1 span {
+    display: block;
+}
+
 p span {
     display: block;
 }
@@ -82,32 +86,6 @@ header .navbar.sticky-top {
     width: 100%;
 }
 
-.btn-discover {
-    background-color: #000000;
-    /* Black button background */
-    color: #ffffff;
-    /* White text */
-    padding: 10px 20px;
-    /* Button padding */
-    text-transform: uppercase;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-}
-
-/* Hover effect for button */
-.btn-discover:hover {
-    background-color: #333333;
-    /* Darker background on hover */
-}
-
-
-.card {
-    margin-bottom: 20px;
-    background-color: #FEFEFE;
-    border: 1px solid #9DBF9E;
-    margin-bottom: 20px;
-}
 
 h5 {
     color: #fff5eb;
