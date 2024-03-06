@@ -5,91 +5,266 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="author" content="Andrew Hollar">
-    <meta name="description" content="Andrew Hollar's personal website">
-    <meta name="keywords" content="Andrew Hollar">
-
+    <meta name="author" content="Drew Hollar">
+    <meta name="description" content="Drew Hollar's personal website">
+    <meta name="keywords" content="Drew Hollar">
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Andrew Hollar's Personal Website" />
+    <meta property="og:title" content="Drew Hollar's Personal Website" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="http://www.andrewhollar.com/images/websiteportrait.jpg" />
-    <meta property="og:url" content="http://www.andrewhollar.com/" />
+    <meta property="og:image" content="http://www.drewhollar.com/images/websiteportrait.jpg" />
+    <meta property="og:url" content="http://www.drewhollar.com/" />
     <meta property="og:description"
-        content="Welcome to Andrew Hollar's personal website where I share my personal projects and professional journey" />
-    <meta property="og:site_name" content="Andrew Hollar's Website" />
-
-    <title>Andrew Hollar's Personal Website</title>
-
+        content="Welcome to Drew Hollar's personal website where I share my personal projects and professional journey" />
+    <meta property="og:site_name" content="Drew Hollar's Website" />
+    <title>Drew Hollar's Personal Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="container">
-        <h1>Andrew Hollar's Personal Website</h1>
-        <h2>Portfolio & Professional Journey</h2>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link nav-link-ltr" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-ltr" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-ltr" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-ltr" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-ltr" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <section class="container">
-        <h2>About Me</h2>
-        <p>Welcome to my personal website! Here you'll find information about my projects, interests, and professional
-            journey.</p>
-        <img src="images/websiteportrait.jpg" alt="Andrew Hollar">
-    </section>
-    <section class="container">
-        <h2>Site Highlights</h2>
-        <div class="highlight">
-            <img src="images/projecthighlight.jpg" alt="Featured Project Image">
-            <h3><a href="projects.html">Machine Learning Fitness Tracker</a></h3>
-            <p>Discover the intersection of technology and fitness through my work on a Machine Learning Fitness Tracker,
-            a highlight of my project portfolio. This project is capable or taking accelerometer and gyroscope data and using it for
-            innovative health and fitness solutions.
-            By employing feature engineering and predictive modeling, including techniques like Fourier transformation
-            and random forest algorithms, I have created a way to succesfully track various barbell exercises. Learn more about this
-            project and the others I have worked on <a href="projects.html">here</a>.</p>
-        </div>
-        <div class="highlight">
-            <img src="images/resumehighlight.jpg" alt="Resume Image">
-            <h3><a href="resume.html">Resume</a></h3>
-            <p>My resume reflects my educational background with an expected Bachelor of Science in Computer Science from the
-            University of Virginia by December 2024. It details my involvement in key software projects and internships, such as
-            leading a team to develop an intuitive online wine store and streamlining client profiles with RPA Database
-            initializations. My work experience spans innovative companies across diverse locations, from Cape Town to Reston,
-            VA, showcasing my ability to adapt and excel in varied environments. Skills in programming languages, tools, and
-            frameworks such as Python, Java, JavaScript, React, and Django also add to my comprehensive knowledge in software
-            development. See my full resume <a href="resume.html">here</a>
-            </p>
-        </div>
-        <div class="highlight">
-            <img src="images/backgroundhighlight.jpg" alt="Background Image">
-            <h3><a href="about.html">Background</a></h3>
-            <p>Originating from Harrisonburg and currently a student at the University of Virginia, my journey in computer
-            science has been challenging but I have learned a lot. Beyond the classroom, I serve as the Secretary of the Trigon
-            Engineering Society, engaging in community and professional development activities. My projects, including a
-            web-based event coordinator platform for UVA and an interactive cryptocurrency dashboard, reflect my commitment to
-            applying technical knowledge to real-world problems. Learn more about my background <a href="about.html">here.</a>
-            </p>
-        </div>
-    </section>
-    <footer class="container primary-footer">
-        <small class = "copyright">© 2024 Andrew Hollar</small>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </footer>
-</body>
+    <main>
+        <div class="container">
+        <section>
+            <div class="row mt-5">
+                <div class="col-md-5 mt-4">
+                    <h2>
+                    👋 Hello,
+                    I'm Drew Hollar.
+                    </h2>
+                    <p style="white-space: pre-line;">
+                    I'm currently a student at the University of Virginia, my goal is to graduate in Fall 2024 with a B.S. in Computer Science.
+                    
+                    Growing up in Harrisonburg, VA, I discovered my passion for solving complex problems using computer science. I have a strong interest in various fields within computer science, such as front-end development, machine learning, artificial intelligence, and more.
+                    
+                    I love applying my knowledge to create practical solutions to real-world problems in my personal coding projects. If you'd like to learn more about what I'm passionate about, keep reading!
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <img src="images/websiteportrait.jpg" alt="Drew Hollar" class="img-fluid">
+                </div>
+            </div>
+        </section>
 
-</html>
+        <section>
+            <h2 class="text-center mt-5">Technical Expertise</h2>
+            <p class="text-center mb-5">Always looking to expand and develop my skillset</p>
+
+            <div class="row">
+                <!-- Left Column for Skills -->
+                <div class="col-md-6">
+                    <div class="skill">
+                        <h3>Python</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-advanced" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                                aria-valuemax="100">80%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <h3>UI/UX</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-advanced" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                                aria-valuemax="100">85%</div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <h3>SQL</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-beginner" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0"
+                                aria-valuemax="100">65%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Machine Learning</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-intermediate" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                                aria-valuemax="100">70%</div>
+                        </div>
+                    </div>
+
+                    <!-- Repeat for other skills -->
+                </div>
+            
+                <!-- Right Column for Skills -->
+                <div class="col-md-6">
+                    <div class="skill">
+                        <h3>Java</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-beginner" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0"
+                                aria-valuemax="100">65%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Firebase</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-intermediate" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                                aria-valuemax="100">70%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Git</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-advanced" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                                aria-valuemax="100">90%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Selenium</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-beginner" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+                                aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                    <!-- Repeat for other skills -->
+                </div>
+            </div>
+
+        </section>
+
+
+        <section>
+            <h2 class="text-center mt-5">Recent Projects</h2>
+            <p class="text-center mb-5">Some of my most recent ventures in computer science</p>
+            <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#headerCarousel" data-slide-to="1"></li>
+                    <li data-target="#headerCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/slide1.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Machine Learning Fitness Tracker</h5>
+                            <p>Developed a Python-based Machine Learning Fitness Tracker that uses accelerometer and gyroscope data to
+                            count repetitions and distinguish between five strength training exercises.
+                            <a href="projects.html">Learn more here!</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/slide2.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>UVA Event Coordinator</h5>
+                            <p>Created a Django-based web application to streamline event management at UVA, integrating Heroku for database management
+                            and Google APIs for real-time location services.
+                            <a href="projects.html">Learn more here!</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/slide3.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Power BI Dashboard</h5>
+                            <p>Created a Power BI dashboard that presents a breakdown of a data professional survey, highlighting key metrics such as country
+                            distribution, job titles, and barriers to entry in the field.
+                            <a href="projects.html">Learn more here!</a></p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+                    <span class="custom-carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+                    <span class="custom-carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+    </div>
+        <div class = "featurette-background-1 mt-5">
+        <section class="container">
+            <!-- Project Section -->
+            <div class="row align-items-center featurette">
+                <div class="col-md-7 text-center order-md-2">
+                    <h3 class="featurette-heading">More Projects</h3>
+                    <p class="lead">I've spearheaded a range of cutting-edge projects, including a Python-based Machine Learning Fitness Tracker that
+                    leverages motion sensor data for workout analytics, a Django-powered UVA Event Coordinator app integrating Google APIs
+                    for enhanced campus event management, and a dynamic Cryptocurrency Dashboard offering real-time market data and news
+                    aggregation to name a few.</p>
+                        <a href="projects.html" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" src="images/projecthighlight.jpg"
+                        alt="Featured Project Image">
+                </div>
+            </div>
+            </section>
+            </div>
+        
+            <div class="featurette-background-2">
+            <section class="container">
+            <!-- Resume Section -->
+            <div class="row align-items-center featurette">
+                <div class="col-md-7 text-center">
+                    <h3 class="featurette-heading">My Resume</h3>
+                    <p class="lead">My resume reflects my educational background and work experience. It details my involvement in key
+                        software projects and internships, showcasing my ability to adapt and excel in varied environments. Feel free to view or download my resume here!</p>
+                    <a href="resume.html" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" src="images/resumehighlight.jpg"
+                        alt="Resume Highlight Image">
+                </div>
+            </div>
+            </section>
+            </div>
+        
+            <div class="featurette-background-3">
+            <section class="container">
+            <!-- Background Section -->
+            <div class="row align-items-center featurette">
+                <div class="col-md-7 text-center order-md-2">
+                    <h3 class="featurette-heading">My Background</h3>
+                    <p class="lead">Originating from Harrisonburg and currently a student at the University of Virginia, my
+                        journey in computer science has been challenging but I have learned a lot. Learn more about what brought me to this point in my career journey.</p>
+                        <a href="about.html" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" src="images/backgroundhighlight.jpg" alt="Background Image">
+                </div>
+            </div>
+        </section>
+        </div>
+
+    </main>
+    <footer class="text-center py-4">
+        <small>© 2024 Drew Hollar</small>
+        <div>
+            <a href="about.html">About</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="resume.html">Resume</a> |
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+    
+    </html>
