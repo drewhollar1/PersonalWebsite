@@ -37,14 +37,11 @@ a:hover {
 header .navbar {
     background-color: #2F4F4F !important;
     position: sticky;
-    /* Your chosen navbar color */
     padding: 1rem 0;
-    /* Adjusted for better vertical alignment */
 }
 
 header .navbar .nav-item {
     margin: 0 1rem;
-    /* Horizontal spacing between menu items */
 }
 
 header .navbar .nav-link {
@@ -61,12 +58,10 @@ header .navbar .nav-link:hover {
     color: #87CEEB !important;
 }
 
-/* Underline effect */
 header .navbar .nav-link::before {
     content: '';
     position: absolute;
     bottom: -5px;
-    /* Positioning the underline below the text */
     left: 50%;
     transform: translateX(-50%);
     width: 0;
@@ -79,18 +74,15 @@ header .navbar .nav-link:hover::before {
     width: 100%;
 }
 
-/* Sticky top positioning */
 header .navbar.sticky-top {
     top: 0;
     z-index: 1020;
     width: 100%;
 }
 
-
 h5 {
     color: #fff5eb;
 }
-
 
 .skill h3 {
     font-size: 1.1rem;
@@ -123,11 +115,11 @@ h5 {
 
 
 .carousel-caption {
-        color: #fff5eb;
-        background-color: rgba(47, 79, 79, 0.9);
-        padding: 1rem;
-        border-radius: 0.5rem;
-        bottom: 10%;
+    color: #fff5eb;
+    background-color: rgba(47, 79, 79, 0.9);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    bottom: 10%;
 }
 
 .custom-carousel-control-prev-icon {
@@ -150,7 +142,6 @@ h5 {
 
 .btn-primary {
     background-color: #6A8D92;
-    /* Dusty Blue */
     border-color: #6A8D92;
 }
 
@@ -158,6 +149,100 @@ h5 {
     background-color: #9DBF9E;
     border-color: #9DBF9E;
 }
+
+.button-container {
+    text-align: center;
+}
+
+.button-large {
+    width: 190px;
+    font-size: 20px;
+    padding: 5px 0;
+    margin: 0 70px;
+    display: inline-block;
+}
+
+.bi {
+    font-size: 1.5rem;
+}
+
+.timeline-container {
+    position: relative;
+}
+
+.timeline-container:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #cccccc;
+}
+
+.timeline-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.timeline-entry:nth-child(odd) .timeline-entry-content {
+    order: 2;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.timeline-entry:nth-child(odd) .timeline-entry-img {
+    order: 1;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.timeline-entry:nth-child(even) .timeline-entry-content {
+    order: 1;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.timeline-entry:nth-child(even) .timeline-entry-img {
+    order: 2;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.timeline-entry-content,
+.timeline-entry-img {
+    flex: 1;
+    text-align: center;
+}
+
+.timeline-entry-img img {
+    width: 100%;
+    max-width: 275px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .timeline-entry {
+        flex-direction: column;
+    }
+
+    .timeline-entry-content,
+    .timeline-entry-img {
+        order: unset;
+        padding: 0;
+    }
+
+    .timeline-container:before {
+        left: 0;
+        width: 100%;
+        height: 2px;
+    }
+}
+
 
 .featurette {
     margin-bottom: 40px;
@@ -168,17 +253,13 @@ h5 {
     font-size: 2.5rem;
     text-transform: uppercase;
     color: #36454F;
-    /* Dark Slate Gray */
 }
 
 .featurette-image {
     width: 100%;
     height: 275px;
-        /* adjust this as necessary to fit your design */
-        object-fit: cover;
-        /* this will cover the area, cropping the image if necessary */
-        border-radius: 0.3rem;
-        /* Optional: adds rounded corners to the images */
+    object-fit: cover;
+    border-radius: 0.3rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -190,12 +271,10 @@ h5 {
     color: #2F4F4F;
 }
 
-/* Adjusting padding and margins */
 .row {
     margin-bottom: 0rem;
 }
 
-/* Responsive Image Handling */
 @media (max-width: 768px) {
     .featurette-image {
         margin-bottom: 2rem;
@@ -247,7 +326,6 @@ h5 {
 
 .footer-icon:hover {
     color: #87CEEB;
-    /* Icons hover color */
 }
 
 .footer-links a {
@@ -261,7 +339,6 @@ h5 {
     color: #87CEEB;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .footer {
         text-align: left;
@@ -271,4 +348,35 @@ h5 {
         text-align: center;
         margin-top: 1rem;
     }
+}
+
+.card {
+    background-color: #e9ffe9;
+    border: 1px solid #9DBF9E;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(47, 79, 79, 0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-left: auto;
+        margin-right: auto;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(47, 79, 79, 0.2);
+}
+
+.card-body {
+    padding: 1.5rem;
+    color: #2F4F4F;
+}
+
+.card-title {
+    color: #36454F;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
