@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Drew Hollar">
+    <meta name="description"
+        content="Explore Drew Hollar's Projects - A showcase of various projects encompassing software development, machine learning, and more.">
+    <meta name="keywords" content="Drew Hollar, Projects, Software Development, Machine Learning">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Drew Hollar's Project Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://www.drewhollar.com/images/projecthighlight.jpg" />
+    <meta property="og:url" content="http://www.drewhollar.com/projects" />
+    <meta property="og:description"
+        content="Dive into the portfolio of Drew Hollar, featuring a diverse range of innovative projects and technical explorations." />
+    <meta property="og:site_name" content="Drew Hollar's Project Portfolio" />
+    <title>Drew Hollar's Project Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link nav-link-ltr" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-ltr" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-ltr" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-ltr" href="#contact-footer">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="projects-blurb mt-5 mb-5">
+                <h1>Projects</h1>
+                <p>Below is a portfolio of my favorite projects, including those planned or currently in development!</p>
+            </div>
+        </div>
+
+        <section class="container my-5">
+            <h2 class="section-title text-center">Completed Projects</h2>
+            <!-- Completed Projects List -->
+            <div class="row project-list">
+                <div class="col-md-6 mb-6">
+                    <div class="card project-card">
+                        <img class="card-img-top" src="images/proj1.jpg" alt="Project 1 Image">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Machine Learning Fitness Tracker</h5>
+                            <p class="card-text">I developed a Python-based Machine Learning Fitness Tracker leveraging accelerometer and gyroscope data to
+                            accurately count repetitions and differentiate between five strength training exercises. I employed advanced feature
+                            engineering techniques like window-based mean, Fourier transformation, and K-means clustering for data optimization,
+                            followed by predictive modeling utilizing various algorithms including neural networks, random forests, and decision
+                            trees, with random forest yielding the best results. It was awesome being able to solve a practical issue in my life through machine learning.
+                            In the future I could design a UI for this program so that it could be used with a wearable accessory.</p>
+                            <a href="https://github.com/drewhollar1/FitnessTracker" class="btn btn-primary btn-center">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-6">
+                    <div class="card project-card">
+                        <img class="card-img-top" src="images/slide2.jpg" alt="Project 2 Image">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">UVA Event Coordinator</h5>
+                            <p class="card-text">I spearheaded the development of a web application tailored for UVA campus event management. Utilizing
+                            Django framework and Heroku for database management, our team integrated Google Maps, Google Geocoding, and Google Login API to
+                            offer authenticated users real-time location data of ongoing events. As the Scrum Master, I led the team in adhering to
+                            the Scrum methodology, organizing sprints to guarantee prompt and effective project completion, and fostering an agile
+                            development atmosphere. The site has not been maintained in a while so it might not be working perfectly currently.</p>
+                            <a href="https://cs-3240-17b-cd641821be5d.herokuapp.com/" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img class="card-img-top" src="images/cryptodash.jpg" alt="Project 3 Image">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Crytocurrency Dashboard</h5>
+                            <p class="card-text">I crafted an engaging cryptocurrency dashboard using JavaScript, React, HTML, and CSS to offer users a
+                            dynamic interface. By integrating Rapid API's Crypto News Live & Alpha Vantage, I ensured users had access to up-to-date
+                            cryptocurrency news and real-time exchange rates for popular cryptocurrencies. It should be noted that the styling for this dashboard is not finished! 
+                            I may go back and finish it later but the point of this project was to improve my ability to implement and utilize existing API's so styling was not my main priority.
+                            As a result project is not ready for presentation but it does function.</p>
+                            <a href="https://github.com/drewhollar1/crypto-dashboard" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img class="card-img-top" src="images/powerbiproj.jpg" alt="Project 4 Image">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Power BI Professional Data Dashboard</h5>
+                            <p class="card-text">In my Power BI dashboard project, I've taken survey responses from data professionals to create an
+                            narrative illustrated through data visualizations. I've broken down the demographics of survey participants,
+                            showcasing distributions across countries and average ages.
+                            I tried to use a variety of graphing techniques such as using gauge charts to reflect satisfaction levels with work-life balance and salaries.
+                            I did this project to become more familiar with using Power BI to effectively visualize data.</p>
+                            <a href="powerbiproject.pdf" class="btn btn-primary" download="powerbiproject.pdf">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img class="card-img-top" src="images/proj5.jpg" alt="Project 5 Image">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Personal Website</h5>
+                            <p class="card-text">Crafted with HTML and CSS, my personal website serves as a showcase for my resume and portfolio of projects. Seamlessly
+                            blending sleek design with user-friendly navigation, the website offers an intuitive platform for visitors to explore my
+                            professional background and delve into the details of my work. From elegant layout to responsive elements, every aspect
+                            of the website is meticulously tailored to leave a lasting impression and highlight my skills and accomplishments.
+                            Hopefully from the time you have spent on this site you agree!</p>
+                            <a href="https://github.com/drewhollar1/PersonalWebsite" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="container my-5">
+            <h2 class="section-title text-center">In-Progress Projects</h2>
+            <div class="row project-list">
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <img class="card-img-top" src="images/proj6.jpg" alt="Project 6 Image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">UVA Dorm Rater</h5>
+                        <p class="card-text">
+                            UVA Dorm Rater, was created in collaboration with another UVA student to provide an insightful resource for prospective University of Virginia
+                            students by presenting reviews of the UVA dorm experience. Offering
+                            functionality like account management, dorm-specific reviews, and a voting system, the site ensures users can not only
+                            share their experiences but also find the most useful reviews quickly. We developed the platform with a robust front-end
+                            that communicates with a PHP backend to ensure an asynchronous, smooth user experience, including features like dorm
+                            search and automatic review sorting. Currently only the front-end is finished, the project is expected to be completed sometime in April.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <img class="card-img-top" src="images/proj7.jpg" alt="Project 7 Image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Personal Website AI Chatbot</h5>
+                        <p class="card-text">
+                        Leveraging the latest advancements in AI, I'm currently developing an intelligent chatbot for my personal website.Powered by Google's Dialogflow, it processes natural language
+                        queries with precision, ensuring users receive accurate and relevant information. The backend, built on the robust
+                        FastAPI framework, promises swift and reliable responses, while an SQL database underpins the system, managing dynamic
+                        data with efficiency. There no current hard deadline for this chatbot, but I plan to work on it next chance I get.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <img class="card-img-top" src="images/proj8.jpg" alt="Project 7 Image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">HoosBudget UI</h5>
+                        <p class="card-text">
+                        In a forward-thinking academic project, my team and I embarked on the conceptualization of HoosBudget, an innovative UI
+                        for a student-focused budgeting app imagined for the UVA community. This theoretical application was meticulously
+                        designed through an iterative cycle of user experience research methods, including contextual inquiries, workflow
+                        analysis, and prototype refinements. Through methods like flow models, we mapped out a user interface that seamlessly
+                        integrates the financial nuances of college life, from splitting rent and utility bills to managing academic expenses.
+                        The final UI design should be complete by the end of April.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <section class="container my-5">
+            <h2 class="section-title text-center">Planned Projects</h2>
+            <!-- Planned Projects List -->
+            <div class="row project-list">
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <img class="card-img-top" src="images/proj9.jpg" alt="Project 7 Image">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">AI Final Project</h5>
+                            <p class="card-text">
+                                My AI class will feature a final project that covers the concepts discussed in class. The specifics of the project are to be determined,
+                                however, it will most likely cover topics such as agent problem solving, reinforcement learning, generative AI, and more.
+                                I will be sure to update this page as soon as I get more information or complete the project.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+    </main>
+
+
+    <footer class="footer bg-dark text-light text-center py-4" id="contact-footer">
+        <div class="container">
+            <h2 class="mt-5 mb-2" style="color: white">Contact Me</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h5>Connect with me here 👇</h5>
+                    <a href="https://www.linkedin.com/in/andrew-hollar/" class="footer-icon"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/drewhollar1" class="footer-icon"><i class="bi bi-github"></i></a>
+                    <a href="https://www.instagram.com/dhollr_1/" class="footer-icon"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h5>Reach out formally here!</h5>
+                    <p><i class="bi bi-telephone-fill"></i> +1 540 282 2612</p>
+                    <p><i class="bi bi-envelope-fill"></i> drewhollar1@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="projects.html">Projects</a> |
+                <a href="resume.html">Resume</a>
+            </div>
+            <small>© 2024 Drew Hollar</small>
+        </div>
+    </footer>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
